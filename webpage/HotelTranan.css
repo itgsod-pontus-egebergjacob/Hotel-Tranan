@@ -9,3 +9,28 @@ div#header {
     height: 125px;
     background-color: white;
 }
+div#meny {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 40px;
+    background-color: darkblue;
+
+
+}
+div#logo {
+    width: 100px;
+    height: 40px;
+    background-color: darkred;
+    float: left;
+    margin-top: 42.5px;
+    text-align: center;
+}
+div#boka {
+    width: 100px;
+    height: 40px;
+    background-color: darkgreen;
+    float: right;
+    margin-top: 42.5px;
+    text-align: center;
+}
