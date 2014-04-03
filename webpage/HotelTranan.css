@@ -41,3 +41,28 @@ div#bilder {
     margin-left: auto;
     margin-right: auto;
 }
+div#Resturanger {
+    float: left;
+    margin-left: 57px;
+    margin-right: 35px;
+    text-decoration-color: white;
+
+}
+div#Avslappnig {
+    float: left;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+div#Erbjudande {
+    float: left;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+div#Omoss {
+    float: left;
+    margin-left: 35px;
+    margin-right: 57px;
+
+}
