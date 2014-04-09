@@ -14,7 +14,7 @@ div#meny {
     margin-right: auto;
     width: 600px;
     height: 40px;
-    background-color: darkblue;
+    background-color: yellowgreen;
 
 
 }
@@ -64,5 +64,13 @@ div#Omoss {
     float: left;
     margin-left: 35px;
     margin-right: 57px;
+
+}
+div#content {
+    background-color: silver;
+    width: 600px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
