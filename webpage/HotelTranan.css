@@ -15,9 +15,16 @@ div#meny {
     width: 600px;
     height: 40px;
     background-color: yellowgreen;
-
-
+    text-align: center;
 }
+a.MenyButton {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 8px;
+    text-decoration: none;
+    color: green;
+}
+
 div#logo {
     width: 100px;
     height: 40px;
@@ -40,33 +47,6 @@ div#bilder {
     background-color: darkcyan;
     margin-left: auto;
     margin-right: auto;
-}
-div#Resturanger {
-    float: left;
-    margin-top: 8px;
-    margin-left: 57px;
-    margin-right: 35px;
-
-}
-div#Avslappnig {
-    float: left;
-    margin-top: 8px;
-    margin-left: 35px;
-    margin-right: 35px;
-}
-div#Erbjudande {
-    float: left;
-    margin-top: 8px;
-    margin-left: 35px;
-    margin-right: 35px;
-
-}
-div#Omoss {
-    float: left;
-    margin-top: 8px;
-    margin-left: 35px;
-    margin-right: 57px;
-
 }
 div#content {
     background-color: silver;
