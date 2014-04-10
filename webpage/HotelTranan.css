@@ -16,6 +16,7 @@ div#meny {
     height: 40px;
     background-color: yellowgreen;
     text-align: center;
+    line-height: 37px;
 }
 a.MenyButton {
     padding-left: 35px;
@@ -32,6 +33,8 @@ div#logo {
     float: left;
     margin-top: 30px;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 div#boka {
     width: 100px;
@@ -40,6 +43,8 @@ div#boka {
     float: right;
     margin-top: 30px;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 div#bilder {
     width: 600px;
