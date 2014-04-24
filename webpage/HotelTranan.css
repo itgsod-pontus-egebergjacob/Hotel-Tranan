@@ -58,6 +58,11 @@ div#content {
 div#rightcontent {
     float: right;
 }
+div#leftcontent {
+    width: 450px;
+    height: 450px;
+    background-color: darkred;
+ }
 div#karta {
     width: 150px;
     height: 150px;
@@ -65,7 +70,12 @@ div#karta {
 }
 div#textbox {
     background-color: darkorange;
-    height: 200px;
-    width: 125px;
+    height: 300px;
+    width: 150px;
     float: right;
+}
+div#copyright {
+    height: 30px;
+    width: 100%;
+    background-color: gray;
 }
