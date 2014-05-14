@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-image: url('../pic_original/backround.jpg');
 }
 div#everything {
     width: 750px;
@@ -10,11 +10,12 @@ div#everything {
 div#everything p {
     margin: 0;
     font-size: 14px;
+    color: #EDEDED;
 }
 div#header {
     width: 100%;
     height: 100px;
-    background-color: white;
+    background-image: url('../pic_original/backroundimg.jpg');
 }
 div#meny {
     width: 100%;
@@ -56,12 +57,12 @@ div#rightcontent {
 div#leftcontent {
     width: 550px;
     height: 450px;
-    background-color: darkred;
+    background-color: #550094;
  }
 div#boka {
     width: 200px;
     height: 450px;
-    background-color: orangered;
+    background-color: #490094;
 }
 div#copyright {
     height: 30px;

@@ -30,13 +30,20 @@
         </script>
 
         <link rel="stylesheet" type="text/css" href="epoch_styles.css" />
-        <script type="text/javascript" src="/javascipt/epoch_classes.js"></script>
+        <script type="text/javascript" src="../javascript/epoch_classes.js"></script>
+        <script type="text/javascript">
+            var Till, Ifran; /*must be declared in global scope*/
+            /*put the calendar initializations in the window's onload() method*/
+            window.onload = function() {
+                Till = new Epoch('epoch_popup','popup',document.getElementById('popup_container'),false);
+                Ifran = new Epoch('cal2','popup',document.getElementById('Ifran_container'),false);
+            };
+        </script>
 
     </head>
     <body>
     <div id="everything">
         <div id="header">
-
             <div id="logo">
                 <a href="http://en.wikipedia.org/wiki/Main_Page"><img src="http://placehold.it/100x40"/></a>
             </div>
@@ -81,7 +88,18 @@
         <div id="content">
             <div id="rightcontent">
                 <div id="boka">
+                    <p>Boka från<p>
+                    <form id="Till" method="get" action="#">
+                        <input id="popup_container" type="text">
+                    </form>
 
+                    <p>Boka till<p>
+                    <form id="Ifran" method="get" action="#">
+                        <input id="Ifran_container" type="text">
+                    </form>
+
+                    <table id="epoch_popup_calendar" class="calendar" classname="calendar" style="position: absolute; top: 540px; left: 10px; display: none;"><tbody><tr><td><div id="epoch_popup_mainheading" class="mainheading" classname="mainheading"><input type="button" value="&lt;" title="Go to the previous month"><select><option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option><option value="3">Apr</option><option value="4" selected="selected">May</option><option value="5">Jun</option><option value="6">Jul</option><option value="7">Aug</option><option value="8">Sep</option><option value="9">Oct</option><option value="10">Nov</option><option value="11">Dec</option></select><select><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014" selected="selected">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option></select><input type="button" value="&gt;" title="Go to the next month"></div></td></tr><tr><td><table id="epoch_popup_caldayheading" class="caldayheading" classname="caldayheading"><tbody><tr><td class="wkhead" classname="wkhead"></td><td>Su</td><td>Mo</td><td>Tu</td><td>We</td><td>Th</td><td>Fr</td><td>Sa</td></tr></tbody></table></td></tr><tr><td id="epoch_popup_cell_td"><table id="epoch_popup_calcells" class="calcells" classname="calcells"><tbody><tr><td class="wkhead" classname="wkhead">17</td><td class="notmnth" classname="notmnth">27</td><td class="notmnth" classname="notmnth">28</td><td class="notmnth" classname="notmnth">29</td><td class="notmnth" classname="notmnth">30</td><td class="wkday" classname="wkday">1</td><td class="wkday" classname="wkday">2</td><td class="wkend" classname="wkend">3</td></tr><tr><td class="wkhead" classname="wkhead">18</td><td class="wkend" classname="wkend">4</td><td class="wkday" classname="wkday">5</td><td class="wkday" classname="wkday">6</td><td class="wkday" classname="wkday">7</td><td class="wkday" classname="wkday">8</td><td class="wkday" classname="wkday">9</td><td class="wkend" classname="wkend">10</td></tr><tr><td class="wkhead" classname="wkhead">19</td><td class="wkend" classname="wkend">11</td><td class="wkday curdate" classname="wkday curdate">12</td><td class="wkday" classname="wkday">13</td><td class="wkday" classname="wkday">14</td><td class="wkday" classname="wkday">15</td><td class="wkday" classname="wkday">16</td><td class="wkend" classname="wkend">17</td></tr><tr><td class="wkhead" classname="wkhead">20</td><td class="wkend" classname="wkend">18</td><td class="wkday" classname="wkday">19</td><td class="wkday" classname="wkday">20</td><td class="wkday" classname="wkday">21</td><td class="wkday" classname="wkday">22</td><td class="wkday" classname="wkday">23</td><td class="wkend" classname="wkend">24</td></tr><tr><td class="wkhead" classname="wkhead">21</td><td class="wkend" classname="wkend">25</td><td class="wkday" classname="wkday">26</td><td class="wkday" classname="wkday">27</td><td class="wkday" classname="wkday">28</td><td class="wkday" classname="wkday">29</td><td class="wkday" classname="wkday">30</td><td class="wkend" classname="wkend">31</td></tr><tr><td class="wkhead" classname="wkhead">22</td><td class="notmnth" classname="notmnth">1</td><td class="notmnth" classname="notmnth">2</td><td class="notmnth" classname="notmnth">3</td><td class="notmnth" classname="notmnth">4</td><td class="notmnth" classname="notmnth">5</td><td class="notmnth" classname="notmnth">6</td><td class="notmnth" classname="notmnth">7</td></tr></tbody></table></td></tr><tr><td><div><input type="button" value="Clear" title="Clears any dates selected on the calendar"></div></td></tr></tbody></table>
+                   
                 </div>
             </div>
             <div id="leftcontent">
