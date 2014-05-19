@@ -1,20 +1,3 @@
-/*****************************************************************************
-Copyright (C) 2006  Nick Baicoianu
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*****************************************************************************/
 //constructor for the main Epoch class (ENGLISH VERSION)
 function Epoch(name,mode,targetelement,multiselect)
 {
@@ -106,7 +89,7 @@ Epoch.prototype.setLang = function()  //all language settings for Epoch are made
 	this.months_sh = new Array('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
 	this.monthup_title = 'Go to the next month';
 	this.monthdn_title = 'Go to the previous month';
-	this.clearbtn_caption = 'Clear';
+	this.clearbtn_caption = 'Book';
 	this.clearbtn_title = 'Clears any dates selected on the calendar';
 	this.maxrange_caption = 'This is the maximum range';
 };

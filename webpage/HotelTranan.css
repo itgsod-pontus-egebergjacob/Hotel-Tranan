@@ -1,22 +1,27 @@
 body {
     background-image: url('../pic_original/backround.jpg');
+    background-repeat: no-repeat;
 }
+
 div#everything {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
     background-color: purple;
 }
+
 div#everything p {
     margin: 0;
     font-size: 14px;
-    color: #EDEDED;
+    color: #ededed;
 }
+
 div#header {
     width: 100%;
     height: 100px;
     background-image: url('../pic_original/backroundimg.jpg');
 }
+
 div#meny {
     width: 100%;
     height: 40px;
@@ -24,13 +29,15 @@ div#meny {
     text-align: center;
     line-height: 37px;
 }
-a.MenyButton {
+
+div#meny a {
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 8px;
     text-decoration: none;
     color: green;
 }
+
 div#logo {
     width: 100px;
     height: 40px;
@@ -47,26 +54,32 @@ div#bilder {
     height: 125px;
     background-color: darkcyan;
 }
+
 div#content {
     background-color: silver;
     width: 100%;
 }
-div#rightcontent {
+
+div#right-content {
     float: right;
 }
-div#leftcontent {
+
+div#left-content {
     width: 550px;
     height: 450px;
-    background-color: #550094;
- }
+    background-color: #0083c4;
+    float: left;
+}
+
 div#boka {
     width: 200px;
     height: 450px;
-    background-color: #490094;
+    background-color: #ae00de;
 }
+
 div#copyright {
     height: 30px;
     width: 100%;
     background-color: gray;
+    float: left;
 }
-
