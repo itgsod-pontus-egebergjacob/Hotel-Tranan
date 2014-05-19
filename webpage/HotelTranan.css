@@ -1,6 +1,7 @@
 body {
-    background-image: url('../pic_original/backround.jpg');
+    background-image: url('../pic_original/Green-Field-HD-Wallpaper.jpg');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 div#everything {
@@ -65,16 +66,20 @@ div#right-content {
 }
 
 div#left-content {
-    width: 550px;
-    height: 450px;
-    background-color: #0083c4;
+    width: 545px;
+    height: 445px;
     float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: rgba(07,94,155,0.75);
+
 }
 
 div#boka {
     width: 200px;
     height: 450px;
-    background-color: #ae00de;
+    background-color: rgba(00,83,88,0.5);
+
 }
 
 div#copyright {
@@ -82,4 +87,11 @@ div#copyright {
     width: 100%;
     background-color: gray;
     float: left;
+}
+div#antal {
+    float: left;
+}
+
+div#value {
+
 }
