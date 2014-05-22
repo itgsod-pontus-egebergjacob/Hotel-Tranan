@@ -14,7 +14,10 @@ div#everything {
 div#everything p {
     margin: 0;
     font-size: 14px;
-    color: #ededed;
+    color: #E3D8E6;
+}
+div#everything h2 {
+    color: #E3D8E6;
 }
 
 div#header {
@@ -90,6 +93,13 @@ div#copyright {
 }
 div#antal {
     float: left;
+}
+div#antal span {
+    color: #E3D8E6;
+    font-size: 14px;
+}
+div#Personliginfo button {
+
 }
 
 div#value {
