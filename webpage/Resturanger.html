@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Hotel Tranan Resturanger</title>
+    <link rel="stylesheet" href="Resturanger.css">
+
+    <script type="text/javascript">
+        var slideimages = new Array()
+        var slidelinks = new Array()
+
+        function slideshowimages() {
+            for (i = 0; i < slideshowimages.arguments.length; i++) {
+                slideimages[i] = new Image()
+                slideimages[i].src = slideshowimages.arguments[i]
+            }
+        }
+
+        function slideshowlinks() {
+            for (i = 0; i < slideshowlinks.arguments.length; i++) {
+                slidelinks[i] = slideshowlinks.arguments[i]
+            }
+        }
+
+        function gotoshow() {
+            if (!window.winslide || winslide.closed)
+                winslide = window.open(slidelinks[whichlink])
+            else
+                winslide.location = slidelinks[whichlink]
+            winslide.focus()
+        }
+    </script>
+</head>
+<body>
+<div id="everything">
+    <div id="header">
+        <div id="logo">
+            <a href="http://en.wikipedia.org/wiki/Main_Page"><img src="http://placehold.it/100x40"/></a>
+        </div>
+    </div>
+    <div id="meny">
+        <a href="Resturanger.html">Resturanger</a>
+        <a href="http://en.wikipedia.org/wiki/Main_Page">Avslappning</a>
+        <a href="http://en.wikipedia.org/wiki/Main_Page">Erbjudande</a>
+        <a href="http://en.wikipedia.org/wiki/Main_Page">Om oss</a>
+    </div>
+    <div id="bilder">
+        <a><img name="slide" border=0 width=750 height=125></a>
+        <script>
+            slideshowimages("http://placehold.it/700x125", "http://placehold.it/700x125&text=hej", "http://placehold.it/700x125&text=då")
+
+            // Configure the speed of the slideshow, in miliseconds.
+            var slideshowspeed = 2000
+
+            var whichlink = 0
+            var whichimage = 0
+            function slideit() {
+                if (!document.images)
+                    return
+                document.images.slide.src = slideimages[whichimage].src
+                whichlink = whichimage
+                if (whichimage < slideimages.length - 1)
+                    whichimage++
+                else
+                    whichimage = 0
+                setTimeout("slideit()", slideshowspeed)
+            }
+            slideit()
+        </script>
+    </div>
+
+    <div id="content">
+        <div id="left-content">
+            <div id="Name">
+            <h3>Derp name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel lectus felis. Nunc rhoncus cursus
+                ligula sed ultrices. Vivamus at sapien et justo convallis bibendum at vel enim. Phasellus consectetur
+                turpis rhoncus mi aliquet condimentum. Aliquam nulla purus, dictum at mauris non, blandit porta nulla.
+                Morbi ac nunc quis tortor aliquet scelerisque. Quisque vehicula ultricies neque quis scelerisque. Sed
+                mollis euismod tellus, vel venenatis dolor bibendum in. Mauris nec lorem at dui sagittis tempus.
+                Suspendisse a urna consectetur, sollicitudin magna vel, volutpat augue. Phasellus fringilla sapien ut
+                tincidunt egestas. Phasellus auctor felis sit amet orci luctus volutpat.</p>
+            </div>
+            <div id="Frukost">
+            <h3>Våran berömda frukost</h3>
+            <p>Sed tortor mauris, iaculis non rutrum in, bibendum sit amet justo. Fusce congue fermentum dolor, eu
+                congue ipsum placerat eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos. Vivamus congue varius porta. Pellentesque sed tellus ac dui accumsan auctor. Ut
+                vehicula quam sed leo tempor, et tincidunt nulla fringilla. Aenean malesuada lorem a neque auctor, vitae
+                sodales mi posuere. Vestibulum pharetra nibh in purus hendrerit, non dapibus enim posuere. Nullam a quam
+                diam. Nullam vel scelerisque arcu. Pellentesque magna metus, sollicitudin ut commodo nec, cursus vitae
+                sem. Phasellus et rhoncus dolor, sit amet vestibulum ligula. Nulla ut vulputate diam. Donec in nulla
+                eget urna interdum euismod. Ut a tincidunt ligula. Aliquam eu lorem pretium, malesuada diam ut, porta
+                lacus.</p>
+            </div>
+            <div id="Lunch">
+                <h3>Våran berömda lunch</h3>
+                <p>Sed tortor mauris, iaculis non rutrum in, bibendum sit amet justo. Fusce congue fermentum dolor, eu
+                    congue ipsum placerat eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Vivamus congue varius porta. Pellentesque sed tellus ac dui accumsan auctor. Ut
+                    vehicula quam sed leo tempor, et tincidunt nulla fringilla. Aenean malesuada lorem a neque auctor, vitae
+                    sodales mi posuere. Vestibulum pharetra nibh in purus hendrerit, non dapibus enim posuere. Nullam a quam
+                    diam. Nullam vel scelerisque arcu. Pellentesque magna metus, sollicitudin ut commodo nec, cursus vitae
+                    sem. Phasellus et rhoncus dolor, sit amet vestibulum ligula. Nulla ut vulputate diam. Donec in nulla
+                    eget urna interdum euismod. Ut a tincidunt ligula. Aliquam eu lorem pretium, malesuada diam ut, porta
+                    lacus.</p>
+            </div>
+            <div id="Pizza">
+                <h3>Våra berömda pizzor</h3>
+                <p>Sed tortor mauris, iaculis non rutrum in, bibendum sit amet justo. Fusce congue fermentum dolor, eu
+                    congue ipsum placerat eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Vivamus congue varius porta. Pellentesque sed tellus ac dui accumsan auctor. Ut
+                    vehicula quam sed leo tempor, et tincidunt nulla fringilla. Aenean malesuada lorem a neque auctor, vitae
+                    sodales mi posuere. Vestibulum pharetra nibh in purus hendrerit, non dapibus enim posuere. Nullam a quam
+                    diam. Nullam vel scelerisque arcu. Pellentesque magna metus, sollicitudin ut commodo nec, cursus vitae
+                    sem. Phasellus et rhoncus dolor, sit amet vestibulum ligula. Nulla ut vulputate diam. Donec in nulla
+                    eget urna interdum euismod. Ut a tincidunt ligula. Aliquam eu lorem pretium, malesuada diam ut, porta
+                    lacus.</p>
+            </div>
+            <div id="Oxfile">
+                <h3>Våra berömda oxfiler</h3>
+                <p>Sed tortor mauris, iaculis non rutrum in, bibendum sit amet justo. Fusce congue fermentum dolor, eu
+                    congue ipsum placerat eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Vivamus congue varius porta. Pellentesque sed tellus ac dui accumsan auctor. Ut
+                    vehicula quam sed leo tempor, et tincidunt nulla fringilla. Aenean malesuada lorem a neque auctor, vitae
+                    sodales mi posuere. Vestibulum pharetra nibh in purus hendrerit, non dapibus enim posuere. Nullam a quam
+                    diam. Nullam vel scelerisque arcu. Pellentesque magna metus, sollicitudin ut commodo nec, cursus vitae
+                    sem. Phasellus et rhoncus dolor, sit amet vestibulum ligula. Nulla ut vulputate diam. Donec in nulla
+                    eget urna interdum euismod. Ut a tincidunt ligula. Aliquam eu lorem pretium, malesuada diam ut, porta
+                    lacus.</p>
+            </div>
+        </div>
+
+        <div id="right-content">
+            <div id="Shortcut">
+                <a href="#Name">Derp name</a>
+                <br>
+                <a href="#Frukost">Frukost</a>
+                <br>
+                <a href="#Lunch">Lunch</a>
+                <br>
+                <a href="#Pizza">Pizza</a>
+                <br>
+                <a href="#Oxfile">Oxfile</a>
+            </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
