@@ -16,7 +16,7 @@ div#everything p {
     font-size: 14px;
     color: #E3D8E6;
 }
-div#everything h2,h3 {
+div#everything h3,h2 {
     color: #E3D8E6;
 }
 
@@ -65,12 +65,24 @@ div#content {
 }
 
 div#right-content {
-    float: right;
+    float: left;
+    width: 200px;
+    height: 870px;
+    background-color: rgba(00,83,88,0.5);
+    background-image: url('http://placehold.it/200x1100');
+}
+
+div#right-content a {
+    text-decoration: none;
+    color: #E3D8E6;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
 div#left-content {
     width: 545px;
-    height: 445px;
+    height: 865px;
     float: left;
     padding-top: 5px;
     padding-left: 5px;
@@ -78,27 +90,4 @@ div#left-content {
 
 }
 
-div#boka {
-    width: 200px;
-    height: 450px;
-    background-color: rgba(00,83,88,0.5);
 
-}
-
-div#antal {
-    float: left;
-}
-
-div#antal span {
-    color: #E3D8E6;
-    font-size: 14px;
-    margin-right: 13px;
-}
-
-div#Personliginfo button {
-
-}
-
-div#value {
-
-}
