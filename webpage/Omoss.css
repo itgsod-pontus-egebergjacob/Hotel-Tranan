@@ -23,7 +23,7 @@ div#everything h3,h4 {
 div#header {
     width: 100%;
     height: 100px;
-    background-image: url('../pic_original/backroundimg.jpg');
+    background-image: url('../pic(psd)/Banner.png');
 }
 
 div#meny {
@@ -45,7 +45,7 @@ div#meny a {
 div#logo {
     width: 100px;
     height: 40px;
-    background-color: darkred;
+    background-color: #800080;
     float: left;
     margin-top: 30px;
     text-align: center;
