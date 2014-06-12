@@ -69,7 +69,7 @@ div#right-content {
     width: 200px;
     height: 1100px;
     background-color: rgba(00,83,88,0.5);
-    background-image: url('http://placehold.it/200x1100');
+    background-image: url('../pic(psd)/Resturangbilder.png');
 }
 
 div#right-content a {
